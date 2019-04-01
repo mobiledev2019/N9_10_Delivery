@@ -7,21 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4903A98E4A22C02EA7BD3917 /* Pods_DeliveryMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0BFD2DECD90FD5FE1C8A7DC /* Pods_DeliveryMobile.framework */; };
+		8D1550432226558400C0F159 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1550422226558400C0F159 /* PaymentViewController.swift */; };
+		8D15504522265F8500C0F159 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D15504422265F8500C0F159 /* OrderViewController.swift */; };
+		8D1550482226724600C0F159 /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1550472226724600C0F159 /* FBManager.swift */; };
+		8D15504A2226795B00C0F159 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1550492226795B00C0F159 /* LoginViewController.swift */; };
+		8D7A53C8222D743E004B6618 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7A53C7222D743E004B6618 /* User.swift */; };
 		8D7F1BD82225753200E17A10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7F1BD72225753200E17A10 /* AppDelegate.swift */; };
-		8D7F1BDA2225753200E17A10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7F1BD92225753200E17A10 /* ViewController.swift */; };
 		8D7F1BDD2225753200E17A10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7F1BDB2225753200E17A10 /* Main.storyboard */; };
 		8D7F1BDF2225753400E17A10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D7F1BDE2225753400E17A10 /* Assets.xcassets */; };
 		8D7F1BE22225753400E17A10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7F1BE02225753400E17A10 /* LaunchScreen.storyboard */; };
+		8D7F1BEC22257D6100E17A10 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7F1BEB22257D6100E17A10 /* SWRevealViewController.m */; };
+		8D7F1BF022258B8300E17A10 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7F1BEF22258B8300E17A10 /* RestaurantViewController.swift */; };
+		8D7F1BF222258F0100E17A10 /* CustomerMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7F1BF122258F0100E17A10 /* CustomerMenuTableViewController.swift */; };
+		8D7F1BF42225931300E17A10 /* MealListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7F1BF32225931300E17A10 /* MealListTableViewController.swift */; };
+		8DC2EF312243CF5B004BA742 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC2EF302243CF5B004BA742 /* APIManager.swift */; };
+		8DC2EF332243D3A8004BA742 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC2EF322243D3A8004BA742 /* Constants.swift */; };
+		8DE1564C2226349800973816 /* MealDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE1564B2226349800973816 /* MealDetailsViewController.swift */; };
+		8DE1564E22264E5700973816 /* TrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE1564D22264E5700973816 /* TrayViewController.swift */; };
+		8DE1565122264F4E00973816 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE1565022264F4E00973816 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		73472F719C645A8E0F8C3ECB /* Pods-DeliveryMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliveryMobile.debug.xcconfig"; path = "Target Support Files/Pods-DeliveryMobile/Pods-DeliveryMobile.debug.xcconfig"; sourceTree = "<group>"; };
+		8D1550422226558400C0F159 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		8D15504422265F8500C0F159 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		8D15504622266EF600C0F159 /* DeliveryMobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeliveryMobile.entitlements; sourceTree = "<group>"; };
+		8D1550472226724600C0F159 /* FBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBManager.swift; sourceTree = "<group>"; };
+		8D1550492226795B00C0F159 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8D7A53C7222D743E004B6618 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8D7F1BD42225753200E17A10 /* DeliveryMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliveryMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D7F1BD72225753200E17A10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8D7F1BD92225753200E17A10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8D7F1BDC2225753200E17A10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D7F1BDE2225753400E17A10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D7F1BE12225753400E17A10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D7F1BE32225753400E17A10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D7F1BEA22257D6100E17A10 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		8D7F1BEB22257D6100E17A10 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		8D7F1BEE222589E100E17A10 /* DeliveryMobile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeliveryMobile-Bridging-Header.h"; sourceTree = "<group>"; };
+		8D7F1BEF22258B8300E17A10 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		8D7F1BF122258F0100E17A10 /* CustomerMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerMenuTableViewController.swift; sourceTree = "<group>"; };
+		8D7F1BF32225931300E17A10 /* MealListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListTableViewController.swift; sourceTree = "<group>"; };
+		8DC2EF302243CF5B004BA742 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		8DC2EF322243D3A8004BA742 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8DE1564B2226349800973816 /* MealDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailsViewController.swift; sourceTree = "<group>"; };
+		8DE1564D22264E5700973816 /* TrayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrayViewController.swift; sourceTree = "<group>"; };
+		8DE1565022264F4E00973816 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D0BFD2DECD90FD5FE1C8A7DC /* Pods_DeliveryMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeliveryMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED1AD4E162A606B27D716F8F /* Pods-DeliveryMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliveryMobile.release.xcconfig"; path = "Target Support Files/Pods-DeliveryMobile/Pods-DeliveryMobile.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DE1565122264F4E00973816 /* MapKit.framework in Frameworks */,
+				4903A98E4A22C02EA7BD3917 /* Pods_DeliveryMobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +75,8 @@
 			children = (
 				8D7F1BD62225753200E17A10 /* DeliveryMobile */,
 				8D7F1BD52225753200E17A10 /* Products */,
+				8DE1564F22264F4E00973816 /* Frameworks */,
+				E8B15ED3CCF779BE1433F3B2 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +91,87 @@
 		8D7F1BD62225753200E17A10 /* DeliveryMobile */ = {
 			isa = PBXGroup;
 			children = (
+				8DC2EF2F2243CED5004BA742 /* Manager */,
+				8DC2EF2E2243CEC9004BA742 /* Controller */,
+				8DC2EF2D2243CEC3004BA742 /* View */,
+				8DC2EF2C2243CEB8004BA742 /* Model */,
+				8D15504622266EF600C0F159 /* DeliveryMobile.entitlements */,
+				8D7F1BED22257D7F00E17A10 /* Lib */,
 				8D7F1BD72225753200E17A10 /* AppDelegate.swift */,
-				8D7F1BD92225753200E17A10 /* ViewController.swift */,
 				8D7F1BDB2225753200E17A10 /* Main.storyboard */,
 				8D7F1BDE2225753400E17A10 /* Assets.xcassets */,
 				8D7F1BE02225753400E17A10 /* LaunchScreen.storyboard */,
 				8D7F1BE32225753400E17A10 /* Info.plist */,
+				8D7F1BEE222589E100E17A10 /* DeliveryMobile-Bridging-Header.h */,
 			);
 			path = DeliveryMobile;
+			sourceTree = "<group>";
+		};
+		8D7F1BED22257D7F00E17A10 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				8D7F1BEA22257D6100E17A10 /* SWRevealViewController.h */,
+				8D7F1BEB22257D6100E17A10 /* SWRevealViewController.m */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		8DC2EF2C2243CEB8004BA742 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D7A53C7222D743E004B6618 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8DC2EF2D2243CEC3004BA742 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8DC2EF2E2243CEC9004BA742 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D7F1BEF22258B8300E17A10 /* RestaurantViewController.swift */,
+				8D7F1BF122258F0100E17A10 /* CustomerMenuTableViewController.swift */,
+				8D7F1BF32225931300E17A10 /* MealListTableViewController.swift */,
+				8DE1564B2226349800973816 /* MealDetailsViewController.swift */,
+				8DE1564D22264E5700973816 /* TrayViewController.swift */,
+				8D1550422226558400C0F159 /* PaymentViewController.swift */,
+				8D15504422265F8500C0F159 /* OrderViewController.swift */,
+				8D1550492226795B00C0F159 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8DC2EF2F2243CED5004BA742 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8D1550472226724600C0F159 /* FBManager.swift */,
+				8DC2EF302243CF5B004BA742 /* APIManager.swift */,
+				8DC2EF322243D3A8004BA742 /* Constants.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		8DE1564F22264F4E00973816 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DE1565022264F4E00973816 /* MapKit.framework */,
+				D0BFD2DECD90FD5FE1C8A7DC /* Pods_DeliveryMobile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8B15ED3CCF779BE1433F3B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73472F719C645A8E0F8C3ECB /* Pods-DeliveryMobile.debug.xcconfig */,
+				ED1AD4E162A606B27D716F8F /* Pods-DeliveryMobile.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D7F1BE62225753400E17A10 /* Build configuration list for PBXNativeTarget "DeliveryMobile" */;
 			buildPhases = (
+				4A35C72D957A5BD56656BBAE /* [CP] Check Pods Manifest.lock */,
 				8D7F1BD02225753200E17A10 /* Sources */,
 				8D7F1BD12225753200E17A10 /* Frameworks */,
 				8D7F1BD22225753200E17A10 /* Resources */,
+				75A603CC2D1E675D2F48D0C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +208,15 @@
 				TargetAttributes = {
 					8D7F1BD32225753200E17A10 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -130,13 +251,84 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4A35C72D957A5BD56656BBAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeliveryMobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75A603CC2D1E675D2F48D0C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeliveryMobile/Pods-DeliveryMobile-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DeliveryMobile/Pods-DeliveryMobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8D7F1BD02225753200E17A10 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D7F1BDA2225753200E17A10 /* ViewController.swift in Sources */,
+				8D7A53C8222D743E004B6618 /* User.swift in Sources */,
+				8D15504A2226795B00C0F159 /* LoginViewController.swift in Sources */,
+				8D1550482226724600C0F159 /* FBManager.swift in Sources */,
+				8D15504522265F8500C0F159 /* OrderViewController.swift in Sources */,
+				8DE1564C2226349800973816 /* MealDetailsViewController.swift in Sources */,
+				8DE1564E22264E5700973816 /* TrayViewController.swift in Sources */,
+				8D7F1BF022258B8300E17A10 /* RestaurantViewController.swift in Sources */,
+				8D7F1BF42225931300E17A10 /* MealListTableViewController.swift in Sources */,
 				8D7F1BD82225753200E17A10 /* AppDelegate.swift in Sources */,
+				8D7F1BF222258F0100E17A10 /* CustomerMenuTableViewController.swift in Sources */,
+				8DC2EF312243CF5B004BA742 /* APIManager.swift in Sources */,
+				8DC2EF332243D3A8004BA742 /* Constants.swift in Sources */,
+				8D1550432226558400C0F159 /* PaymentViewController.swift in Sources */,
+				8D7F1BEC22257D6100E17A10 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,35 +472,48 @@
 		};
 		8D7F1BE72225753400E17A10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73472F719C645A8E0F8C3ECB /* Pods-DeliveryMobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = DeliveryMobile/DeliveryMobile.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T52TSLLDVY;
 				INFOPLIST_FILE = DeliveryMobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cuongpham.DeliveryMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeliveryMobile/DeliveryMobile-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8D7F1BE82225753400E17A10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED1AD4E162A606B27D716F8F /* Pods-DeliveryMobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = DeliveryMobile/DeliveryMobile.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T52TSLLDVY;
 				INFOPLIST_FILE = DeliveryMobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cuongpham.DeliveryMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeliveryMobile/DeliveryMobile-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
