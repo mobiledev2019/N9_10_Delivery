@@ -13,6 +13,7 @@
 		8D15504522265F8500C0F159 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D15504422265F8500C0F159 /* OrderViewController.swift */; };
 		8D1550482226724600C0F159 /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1550472226724600C0F159 /* FBManager.swift */; };
 		8D15504A2226795B00C0F159 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1550492226795B00C0F159 /* LoginViewController.swift */; };
+		8D311F8B2253A16A00ADDC04 /* RestanrantViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D311F8A2253A16A00ADDC04 /* RestanrantViewCell.swift */; };
 		8D7A53C8222D743E004B6618 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7A53C7222D743E004B6618 /* User.swift */; };
 		8D7F1BD82225753200E17A10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7F1BD72225753200E17A10 /* AppDelegate.swift */; };
 		8D7F1BDD2225753200E17A10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7F1BDB2225753200E17A10 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		8D15504622266EF600C0F159 /* DeliveryMobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeliveryMobile.entitlements; sourceTree = "<group>"; };
 		8D1550472226724600C0F159 /* FBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBManager.swift; sourceTree = "<group>"; };
 		8D1550492226795B00C0F159 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8D311F8A2253A16A00ADDC04 /* RestanrantViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestanrantViewCell.swift; sourceTree = "<group>"; };
 		8D7A53C7222D743E004B6618 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8D7F1BD42225753200E17A10 /* DeliveryMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliveryMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D7F1BD72225753200E17A10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		8DC2EF2D2243CEC3004BA742 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8D311F8A2253A16A00ADDC04 /* RestanrantViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D311F8B2253A16A00ADDC04 /* RestanrantViewCell.swift in Sources */,
 				8D151614225338E0006525A5 /* Restaunrant.swift in Sources */,
 				8D7A53C8222D743E004B6618 /* User.swift in Sources */,
 				8D15504A2226795B00C0F159 /* LoginViewController.swift in Sources */,

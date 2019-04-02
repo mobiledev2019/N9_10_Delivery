@@ -153,13 +153,20 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestaurantCell" id="dla-ML-Xyr">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestaurantCell" id="dla-ML-Xyr" customClass="RestanrantViewCell" customModule="DeliveryMobile" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="226"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dla-ML-Xyr" id="hzk-xQ-oXj">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="226"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blank_image" translatesAutoresizingMaskIntoConstraints="NO" id="OxM-jp-Ioe">
+                                                    <rect key="frame" x="23" y="11" width="329" height="150"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="150" id="Twl-ck-nkU"/>
+                                                    </constraints>
+                                                </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uGm-Vd-VrQ">
                                                     <rect key="frame" x="23" y="161" width="329" height="46"/>
                                                     <subviews>
@@ -186,13 +193,6 @@
                                                         <constraint firstAttribute="bottom" secondItem="IJi-3I-KPS" secondAttribute="bottom" constant="8" id="xWp-9b-Rr5"/>
                                                     </constraints>
                                                 </view>
-                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blank_image" translatesAutoresizingMaskIntoConstraints="NO" id="OxM-jp-Ioe">
-                                                    <rect key="frame" x="23" y="11" width="329" height="150"/>
-                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="150" id="Twl-ck-nkU"/>
-                                                    </constraints>
-                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="OxM-jp-Ioe" firstAttribute="top" secondItem="hzk-xQ-oXj" secondAttribute="topMargin" id="4s5-w1-1Os"/>
@@ -206,6 +206,9 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <connections>
+                                            <outlet property="imgRestaurantLogo" destination="OxM-jp-Ioe" id="BpT-K1-vtH"/>
+                                            <outlet property="lbRestaurantAddress" destination="IJi-3I-KPS" id="EZC-6h-fsk"/>
+                                            <outlet property="lbRestaurantName" destination="u2z-52-Bs8" id="C5h-Pv-odg"/>
                                             <segue destination="kPk-fn-pj4" kind="show" identifier="MealList" id="5vy-j1-cNg"/>
                                         </connections>
                                     </tableViewCell>
@@ -233,6 +236,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="menuBarButton" destination="3uS-NQ-rab" id="HzR-Vm-Hpj"/>
+                        <outlet property="tbvRestaurant" destination="ou1-Yv-vTx" id="8cm-Ax-ako"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Rb-Fb-V2A" userLabel="First Responder" sceneMemberID="firstResponder"/>
