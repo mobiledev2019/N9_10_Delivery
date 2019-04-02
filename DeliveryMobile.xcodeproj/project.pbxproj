@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		522D9A6B0D2048E7488EFCC8 /* Pods_DeliveryMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D90136F28F9F32BC5B17C30 /* Pods_DeliveryMobile.framework */; };
+		8D151614225338E0006525A5 /* Restaunrant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D151613225338E0006525A5 /* Restaunrant.swift */; };
 		8D1550432226558400C0F159 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1550422226558400C0F159 /* PaymentViewController.swift */; };
 		8D15504522265F8500C0F159 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D15504422265F8500C0F159 /* OrderViewController.swift */; };
 		8D1550482226724600C0F159 /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1550472226724600C0F159 /* FBManager.swift */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		2FAB5048E3BFA63C06F921C7 /* Pods-DeliveryMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliveryMobile.release.xcconfig"; path = "Target Support Files/Pods-DeliveryMobile/Pods-DeliveryMobile.release.xcconfig"; sourceTree = "<group>"; };
 		600C28598C85037DFEB89A4F /* Pods-DeliveryMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliveryMobile.debug.xcconfig"; path = "Target Support Files/Pods-DeliveryMobile/Pods-DeliveryMobile.debug.xcconfig"; sourceTree = "<group>"; };
+		8D151613225338E0006525A5 /* Restaunrant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaunrant.swift; sourceTree = "<group>"; };
 		8D1550422226558400C0F159 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		8D15504422265F8500C0F159 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		8D15504622266EF600C0F159 /* DeliveryMobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeliveryMobile.entitlements; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				8D7A53C7222D743E004B6618 /* User.swift */,
+				8D151613225338E0006525A5 /* Restaunrant.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D151614225338E0006525A5 /* Restaunrant.swift in Sources */,
 				8D7A53C8222D743E004B6618 /* User.swift in Sources */,
 				8D15504A2226795B00C0F159 /* LoginViewController.swift in Sources */,
 				8D1550482226724600C0F159 /* FBManager.swift in Sources */,

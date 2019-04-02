@@ -31,7 +31,6 @@ class APIManager {
             "backend": "facebook",
             "client_id": CLIENT_ID,
             "client_secret": CLIENT_SECRET,
-//            "token": "EAAEIr7Xyej0BALiZB4dhMQcAF6ZBQye1clmVpKWUZCxM8NNA8ndoe2UUaJkZBZADk9ByZByCPKrDbhlrwJ22AMyoRSQ5TtQhbzPZBzO7AAgMIJccs32lY6bZB9nOldrnLW5uGkaCEtsoKuKeZAQ9bLTlgvRMg4hCNXKpwfdDxikzkERncGEGG1c8wc0bJD6eK2vd6EuURuqPcCYTg9ko7eEwcxVokJkxZBiyGK2nlLdHk1MwZDZD",
             "token": FBSDKAccessToken.current().tokenString!,
             "user_type": userType
         ]
@@ -82,6 +81,62 @@ class APIManager {
                 completionHandler(error as NSError)
                 break
             }
+        }
+    }
+    
+    //API to refresh the token
+    func refreshToken(completionHandler: @escaping () -> Void){
+        
+        let path = "api/social/refresh-token/"
+        let url = baseURL?.appendingPathComponent(path)
+        let params: [String: Any] = [
+            "access_token" : self.accessToken,
+            "refresh_token" : self.refreshToken
+        ]
+        
+        if (Date() > self.expired){
+            
+            AF.request(url!, method: .post, parameters: params, encoding: URLEncoding(), headers: nil).response(completionHandler: { (response) in
+                
+                switch response.result {
+                case.success(let value):
+                    let jsonData = JSON(value)
+                    self.accessToken = jsonData["access_token"].string!
+                    self.refreshToken = jsonData["refresh_token"].string!
+                    self.expired = Date().addingTimeInterval(TimeInterval(jsonData["expires_in"].int!))
+                    completionHandler()
+                    break
+                    
+                case.failure:
+                    break
+                }
+            })
+        } else{
+            completionHandler()
+        }
+    }
+    
+    //API for getting Restaurant list
+    func getRestaurants(completionHandler: @escaping (JSON?) -> Void) {
+        
+        let path = "api/customer/restaurants/"
+        let url = baseURL?.appendingPathComponent(path)
+        
+        refreshToken {
+            
+            AF.request(url!, method: .get, parameters: nil, encoding: URLEncoding(), headers: nil).responseJSON(completionHandler: { (response) in
+                
+                switch response.result {
+                case .success(let value):
+                    let jsonData = JSON(value)
+                    completionHandler(jsonData)
+                    break
+                    
+                case .failure:
+                    completionHandler(nil)
+                    break
+                }
+            })
         }
     }
 }
