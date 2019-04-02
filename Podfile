@@ -7,11 +7,17 @@ target 'DeliveryMobile' do
 
   # Pods for DeliveryMobile
   pod 'Stripe'
-  pod 'FBSDKCoreKit'
-  pod 'FBSDKLoginKit'
-  pod 'FBSDKShareKit'
-
-  pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git'
-  pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+  
+  pod 'FacebookCore', :inhibit_warnings => true
+  pod 'FacebookLogin', :inhibit_warnings => true
+  pod 'FacebookShare', :inhibit_warnings => true
+  pod 'FBSDKCoreKit', :modular_headers => true, :inhibit_warnings => true
+  pod 'FBSDKLoginKit', :modular_headers => true, :inhibit_warnings => true
+  pod 'FBSDKShareKit', :modular_headers => true, :inhibit_warnings => true
+  
+  pod 'Bolts', :modular_headers => true, :inhibit_warnings => true
+  pod 'Alamofire', '~> 5.0.0-beta.3'
+  
+  pod 'SwiftyJSON', '~> 4.0'
 
 end

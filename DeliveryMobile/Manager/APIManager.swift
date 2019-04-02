@@ -31,7 +31,8 @@ class APIManager {
             "backend": "facebook",
             "client_id": CLIENT_ID,
             "client_secret": CLIENT_SECRET,
-            "token": "EAAEIr7Xyej0BALiZB4dhMQcAF6ZBQye1clmVpKWUZCxM8NNA8ndoe2UUaJkZBZADk9ByZByCPKrDbhlrwJ22AMyoRSQ5TtQhbzPZBzO7AAgMIJccs32lY6bZB9nOldrnLW5uGkaCEtsoKuKeZAQ9bLTlgvRMg4hCNXKpwfdDxikzkERncGEGG1c8wc0bJD6eK2vd6EuURuqPcCYTg9ko7eEwcxVokJkxZBiyGK2nlLdHk1MwZDZD",
+//            "token": "EAAEIr7Xyej0BALiZB4dhMQcAF6ZBQye1clmVpKWUZCxM8NNA8ndoe2UUaJkZBZADk9ByZByCPKrDbhlrwJ22AMyoRSQ5TtQhbzPZBzO7AAgMIJccs32lY6bZB9nOldrnLW5uGkaCEtsoKuKeZAQ9bLTlgvRMg4hCNXKpwfdDxikzkERncGEGG1c8wc0bJD6eK2vd6EuURuqPcCYTg9ko7eEwcxVokJkxZBiyGK2nlLdHk1MwZDZD",
+            "token": FBSDKAccessToken.current().tokenString!,
             "user_type": userType
         ]
         
@@ -43,7 +44,7 @@ class APIManager {
                 
                 let jsonData = JSON(value)
                 print(jsonData)
-                print(FBSDKAccessToken.current().tokenString)
+                print(FBSDKAccessToken.current().tokenString!)
                 
                 self.accessToken = jsonData["access_token"].string!
                 self.refreshToken = jsonData["refresh_token"].string!

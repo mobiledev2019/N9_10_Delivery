@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4903A98E4A22C02EA7BD3917 /* Pods_DeliveryMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0BFD2DECD90FD5FE1C8A7DC /* Pods_DeliveryMobile.framework */; };
+		522D9A6B0D2048E7488EFCC8 /* Pods_DeliveryMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D90136F28F9F32BC5B17C30 /* Pods_DeliveryMobile.framework */; };
 		8D1550432226558400C0F159 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1550422226558400C0F159 /* PaymentViewController.swift */; };
 		8D15504522265F8500C0F159 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D15504422265F8500C0F159 /* OrderViewController.swift */; };
 		8D1550482226724600C0F159 /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1550472226724600C0F159 /* FBManager.swift */; };
@@ -29,7 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		73472F719C645A8E0F8C3ECB /* Pods-DeliveryMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliveryMobile.debug.xcconfig"; path = "Target Support Files/Pods-DeliveryMobile/Pods-DeliveryMobile.debug.xcconfig"; sourceTree = "<group>"; };
+		2FAB5048E3BFA63C06F921C7 /* Pods-DeliveryMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliveryMobile.release.xcconfig"; path = "Target Support Files/Pods-DeliveryMobile/Pods-DeliveryMobile.release.xcconfig"; sourceTree = "<group>"; };
+		600C28598C85037DFEB89A4F /* Pods-DeliveryMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliveryMobile.debug.xcconfig"; path = "Target Support Files/Pods-DeliveryMobile/Pods-DeliveryMobile.debug.xcconfig"; sourceTree = "<group>"; };
 		8D1550422226558400C0F159 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		8D15504422265F8500C0F159 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		8D15504622266EF600C0F159 /* DeliveryMobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeliveryMobile.entitlements; sourceTree = "<group>"; };
@@ -48,13 +49,12 @@
 		8D7F1BEF22258B8300E17A10 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		8D7F1BF122258F0100E17A10 /* CustomerMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerMenuTableViewController.swift; sourceTree = "<group>"; };
 		8D7F1BF32225931300E17A10 /* MealListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListTableViewController.swift; sourceTree = "<group>"; };
+		8D90136F28F9F32BC5B17C30 /* Pods_DeliveryMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeliveryMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC2EF302243CF5B004BA742 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		8DC2EF322243D3A8004BA742 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8DE1564B2226349800973816 /* MealDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailsViewController.swift; sourceTree = "<group>"; };
 		8DE1564D22264E5700973816 /* TrayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrayViewController.swift; sourceTree = "<group>"; };
 		8DE1565022264F4E00973816 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		D0BFD2DECD90FD5FE1C8A7DC /* Pods_DeliveryMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeliveryMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED1AD4E162A606B27D716F8F /* Pods-DeliveryMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliveryMobile.release.xcconfig"; path = "Target Support Files/Pods-DeliveryMobile/Pods-DeliveryMobile.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DE1565122264F4E00973816 /* MapKit.framework in Frameworks */,
-				4903A98E4A22C02EA7BD3917 /* Pods_DeliveryMobile.framework in Frameworks */,
+				522D9A6B0D2048E7488EFCC8 /* Pods_DeliveryMobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				8DE1565022264F4E00973816 /* MapKit.framework */,
-				D0BFD2DECD90FD5FE1C8A7DC /* Pods_DeliveryMobile.framework */,
+				8D90136F28F9F32BC5B17C30 /* Pods_DeliveryMobile.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -168,8 +168,8 @@
 		E8B15ED3CCF779BE1433F3B2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				73472F719C645A8E0F8C3ECB /* Pods-DeliveryMobile.debug.xcconfig */,
-				ED1AD4E162A606B27D716F8F /* Pods-DeliveryMobile.release.xcconfig */,
+				600C28598C85037DFEB89A4F /* Pods-DeliveryMobile.debug.xcconfig */,
+				2FAB5048E3BFA63C06F921C7 /* Pods-DeliveryMobile.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -181,11 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D7F1BE62225753400E17A10 /* Build configuration list for PBXNativeTarget "DeliveryMobile" */;
 			buildPhases = (
-				4A35C72D957A5BD56656BBAE /* [CP] Check Pods Manifest.lock */,
+				B7660FFCD352762C270DF422 /* [CP] Check Pods Manifest.lock */,
 				8D7F1BD02225753200E17A10 /* Sources */,
 				8D7F1BD12225753200E17A10 /* Frameworks */,
 				8D7F1BD22225753200E17A10 /* Resources */,
-				75A603CC2D1E675D2F48D0C6 /* [CP] Embed Pods Frameworks */,
+				5381F6A004498958D5C032F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,7 +208,7 @@
 				TargetAttributes = {
 					8D7F1BD32225753200E17A10 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 1;
@@ -252,7 +252,47 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4A35C72D957A5BD56656BBAE /* [CP] Check Pods Manifest.lock */ = {
+		5381F6A004498958D5C032F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeliveryMobile/Pods-DeliveryMobile-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DeliveryMobile/Pods-DeliveryMobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7660FFCD352762C270DF422 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,40 +312,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		75A603CC2D1E675D2F48D0C6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DeliveryMobile/Pods-DeliveryMobile-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
-				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DeliveryMobile/Pods-DeliveryMobile-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -412,6 +418,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -466,13 +473,14 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		8D7F1BE72225753400E17A10 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73472F719C645A8E0F8C3ECB /* Pods-DeliveryMobile.debug.xcconfig */;
+			baseConfigurationReference = 600C28598C85037DFEB89A4F /* Pods-DeliveryMobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -489,14 +497,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DeliveryMobile/DeliveryMobile-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8D7F1BE82225753400E17A10 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED1AD4E162A606B27D716F8F /* Pods-DeliveryMobile.release.xcconfig */;
+			baseConfigurationReference = 2FAB5048E3BFA63C06F921C7 /* Pods-DeliveryMobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -512,7 +520,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cuongpham.DeliveryMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DeliveryMobile/DeliveryMobile-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
