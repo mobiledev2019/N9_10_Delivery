@@ -11,10 +11,11 @@ import UIKit
 class RestaurantViewController: UIViewController {
 
     @IBOutlet weak var menuBarButton: UIBarButtonItem!
+    @IBOutlet weak var searchRestaurant: UISearchBar!
+    @IBOutlet weak var tbvRestaurant: UITableView!
     
     var restaurants = [Restaurant]()
     var filteredRestaurants = [Restaurant]()
-    @IBOutlet weak var tbvRestaurant: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,6 +61,19 @@ class RestaurantViewController: UIViewController {
     }
 }
 
+extension RestaurantViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        filteredRestaurants = self.restaurants.filter({ (res: Restaurant) -> Bool in
+            
+            return res.name?.lowercased().range(of: searchText.lowercased()) != nil
+        })
+        
+        self.tbvRestaurant.reloadData()
+    }
+}
+
 extension RestaurantViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -67,6 +81,10 @@ extension RestaurantViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        if searchRestaurant.text != "" {
+            return self.filteredRestaurants.count
+        }
         return self.restaurants.count
     }
     
@@ -74,7 +92,12 @@ extension RestaurantViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurantCell", for: indexPath) as! RestanrantViewCell
         
         let restaurant: Restaurant
-        restaurant = restaurants[indexPath.row]
+        
+        if searchRestaurant.text != "" {
+            restaurant = filteredRestaurants[indexPath.row]
+        } else {
+            restaurant = restaurants[indexPath.row]
+        }
         
         cell.lbRestaurantName.text = restaurant.name!
         cell.lbRestaurantAddress.text = restaurant.address!
