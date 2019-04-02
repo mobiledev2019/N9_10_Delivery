@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:text="Create by  N9_12_DeliveryApp"
+        android:text="Create by N9_12_DeliveryApp"
         android:textColor="@color/colorLightGray"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,7 +47,7 @@
         tools:text="USE A DIFFERENT ACCOUNT" />
 
     <Button
-        android:id="@+id/login_facebook"
+        android:id="@+id/loginFacebook"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
@@ -68,7 +68,7 @@
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="25dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/login_facebook"
+        app:layout_constraintBottom_toTopOf="@+id/loginFacebook"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_width="match_parent">
@@ -79,6 +79,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/colorAccent"
+            android:tag="0"
             android:text="Customer"
             android:textColor="@android:color/white"
             android:textSize="12sp" />
@@ -89,6 +90,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@android:color/white"
+            android:tag="1"
             android:text="Driver"
             android:textColor="@color/colorAccent"
             android:textSize="12sp" />
@@ -103,5 +105,6 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 
 </android.support.constraint.ConstraintLayout>
