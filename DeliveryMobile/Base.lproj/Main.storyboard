@@ -341,7 +341,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blank_image" translatesAutoresizingMaskIntoConstraints="NO" id="bKk-ob-X8O">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blank_image" translatesAutoresizingMaskIntoConstraints="NO" id="bKk-ob-X8O">
                                 <rect key="frame" x="0.0" y="64" width="375" height="320"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="320" id="4oc-GE-Jst"/>
@@ -359,7 +359,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beef, American cheese, pickles, ham and fresh vegetable" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dap-v6-UwZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beef, American cheese, pickles, ham and fresh vegetable" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dap-v6-UwZ">
                                 <rect key="frame" x="30" y="471" width="315" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="TRb-kO-Bfv"/>
@@ -466,6 +466,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="imgMeal" destination="bKk-ob-X8O" id="56T-pi-S3F"/>
+                        <outlet property="lbMealName" destination="g5c-H3-x7h" id="2BM-Xb-MD9"/>
+                        <outlet property="lbMealShortDes" destination="Dap-v6-UwZ" id="Fky-5Z-9Za"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n4o-ps-lNn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

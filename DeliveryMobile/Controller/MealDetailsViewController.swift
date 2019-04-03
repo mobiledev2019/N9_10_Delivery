@@ -10,9 +10,25 @@ import UIKit
 
 class MealDetailsViewController: UIViewController {
 
+    @IBOutlet weak var imgMeal: UIImageView!
+    @IBOutlet weak var lbMealName: UILabel!
+    @IBOutlet weak var lbMealShortDes: UILabel!
+    
+    var meal: Meal?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadMeal()
+    }
+    
+    func loadMeal(){
         
+        lbMealName.text = meal?.name
+        lbMealShortDes.text = meal?.short_description
+        
+        if let imageUrl = meal?.image {
+            Helpers.loadImage(imgMeal, "\(imageUrl)")
+        }
     }
 
 }
