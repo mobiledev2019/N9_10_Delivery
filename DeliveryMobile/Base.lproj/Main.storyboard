@@ -265,7 +265,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MealCell" id="atW-Ej-bln">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MealCell" id="atW-Ej-bln" customClass="MealViewCell" customModule="DeliveryMobile" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="140"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="atW-Ej-bln" id="HNH-IX-hTn">
@@ -315,6 +315,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="imgMealImage" destination="Ozi-Ue-Z4d" id="bfq-uS-5Zf"/>
+                                    <outlet property="lbMealName" destination="fiA-jV-iVg" id="OUW-LS-aIq"/>
+                                    <outlet property="lbMealPrice" destination="Y6g-vM-cqa" id="2J9-le-4Qu"/>
+                                    <outlet property="lbShortDescription" destination="Zt4-dU-hUx" id="bDe-0y-BTd"/>
                                     <segue destination="9ho-fj-Fkj" kind="show" identifier="MealDetails" id="Lus-th-Asy"/>
                                 </connections>
                             </tableViewCell>

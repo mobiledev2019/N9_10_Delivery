@@ -82,6 +82,15 @@ class RestaurantViewController: UIViewController {
     func hideActivityIndicator(){
         activityIndicator.stopAnimating()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "MealList" {
+            
+            let controller = segue.destination as! MealListTableViewController
+            controller.restaurant = restaurants[(tbvRestaurant.indexPathForSelectedRow?.row)!]
+        }
+    }
 }
 
 extension RestaurantViewController: UISearchBarDelegate {
