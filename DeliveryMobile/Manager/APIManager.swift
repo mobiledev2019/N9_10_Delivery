@@ -116,15 +116,14 @@ class APIManager {
         }
     }
     
-    //API for getting Restaurant list
-    func getRestaurants(completionHandler: @escaping (JSON?) -> Void) {
+    // Request Server
+    func requestServer(_ method: HTTPMethod,_ path: String,_ params: [String: Any]?,_ encoding: ParameterEncoding,_ completionHandler: @escaping (JSON) -> Void ) {
         
-        let path = "api/customer/restaurants/"
         let url = baseURL?.appendingPathComponent(path)
         
         refreshToken {
             
-            AF.request(url!, method: .get, parameters: nil, encoding: URLEncoding(), headers: nil).responseJSON(completionHandler: { (response) in
+            AF.request(url!, method: method, parameters: params, encoding: encoding, headers: nil).responseJSON{ response in
                 
                 switch response.result {
                 case .success(let value):
@@ -133,10 +132,26 @@ class APIManager {
                     break
                     
                 case .failure:
-                    completionHandler(nil)
+                    completionHandler([])
                     break
                 }
-            })
+            }
         }
+        
+    }
+    
+    //API for getting Restaurant list
+    func getRestaurants(completionHandler: @escaping (JSON?) -> Void) {
+        
+        let path = "api/customer/restaurants/"
+        requestServer(.get, path, nil, URLEncoding(), completionHandler)
+        
+    }
+    
+    //API for getting Meal list
+    func getMeals(restaurantID: Int, completionHandler: @escaping (JSON) -> Void){
+        
+        let path = "api/customer/meals/\(restaurantID)"
+        requestServer(.get, path, nil, URLEncoding(), completionHandler)
     }
 }
