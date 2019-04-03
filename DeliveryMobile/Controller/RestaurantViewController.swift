@@ -17,6 +17,8 @@ class RestaurantViewController: UIViewController {
     var restaurants = [Restaurant]()
     var filteredRestaurants = [Restaurant]()
     
+    let activityIndicator = UIActivityIndicatorView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,6 +32,9 @@ class RestaurantViewController: UIViewController {
     }
     
     func loadRestaurants(){
+        
+        showActivityIndicator()
+        
         APIManager.shared.getRestaurants { (json) in
             
             if json != nil {
@@ -43,10 +48,12 @@ class RestaurantViewController: UIViewController {
                     }
                     
                     self.tbvRestaurant.reloadData()
+                    self.hideActivityIndicator()
                 }
             }
         }
     }
+    
     func loadImage(imageView: UIImageView, urlString: String){
         let imgURL : URL = URL(string: urlString)!
         
@@ -58,6 +65,22 @@ class RestaurantViewController: UIViewController {
                 imageView.image = UIImage(data: data)
             })
         }.resume()
+    }
+    
+    func showActivityIndicator(){
+        
+        activityIndicator.frame = CGRect(x: 0.0, y: 0.0, width: 40.0, height: 40.0)
+        activityIndicator.center = view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.style = UIActivityIndicatorView.Style.whiteLarge
+        activityIndicator.color = UIColor.black
+        
+        view.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
+    }
+    
+    func hideActivityIndicator(){
+        activityIndicator.stopAnimating()
     }
 }
 
