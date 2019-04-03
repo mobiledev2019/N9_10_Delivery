@@ -381,6 +381,9 @@
                                         <state key="normal" title="ADD TO TRAY">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="addToTray:" destination="9ho-fj-Fkj" eventType="touchUpInside" id="rdk-KK-9Yb"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$12.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0e-dO-gkO">
                                         <rect key="frame" x="287" y="55" width="76" height="21"/>
@@ -410,6 +413,9 @@
                                         <state key="normal" title="+">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="AddQty:" destination="9ho-fj-Fkj" eventType="touchUpInside" id="Svb-dY-YzU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nI-e3-IQg">
                                         <rect key="frame" x="337" y="5" width="30" height="30"/>
@@ -421,6 +427,9 @@
                                         <state key="normal" title="-">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="removeQty:" destination="9ho-fj-Fkj" eventType="touchUpInside" id="zin-Uw-iiS"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -470,6 +479,8 @@
                         <outlet property="imgMeal" destination="bKk-ob-X8O" id="56T-pi-S3F"/>
                         <outlet property="lbMealName" destination="g5c-H3-x7h" id="2BM-Xb-MD9"/>
                         <outlet property="lbMealShortDes" destination="Dap-v6-UwZ" id="Fky-5Z-9Za"/>
+                        <outlet property="lbQty" destination="YAf-B6-jDK" id="zU7-B0-p4m"/>
+                        <outlet property="lbTotal" destination="e0e-dO-gkO" id="8Sk-7v-WBu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n4o-ps-lNn" userLabel="First Responder" sceneMemberID="firstResponder"/>
