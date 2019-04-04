@@ -13,6 +13,7 @@
 		8D15504522265F8500C0F159 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D15504422265F8500C0F159 /* OrderViewController.swift */; };
 		8D1550482226724600C0F159 /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1550472226724600C0F159 /* FBManager.swift */; };
 		8D15504A2226795B00C0F159 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1550492226795B00C0F159 /* LoginViewController.swift */; };
+		8D21AEAA2255F83000852BE9 /* TrayViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D21AEA92255F83000852BE9 /* TrayViewCell.swift */; };
 		8D311F8B2253A16A00ADDC04 /* RestanrantViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D311F8A2253A16A00ADDC04 /* RestanrantViewCell.swift */; };
 		8D5962FA22545D150068C73E /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5962F922545D150068C73E /* Meal.swift */; };
 		8D5962FC22545EEC0068C73E /* MealViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5962FB22545EEC0068C73E /* MealViewCell.swift */; };
@@ -43,6 +44,7 @@
 		8D15504622266EF600C0F159 /* DeliveryMobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeliveryMobile.entitlements; sourceTree = "<group>"; };
 		8D1550472226724600C0F159 /* FBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBManager.swift; sourceTree = "<group>"; };
 		8D1550492226795B00C0F159 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8D21AEA92255F83000852BE9 /* TrayViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrayViewCell.swift; sourceTree = "<group>"; };
 		8D311F8A2253A16A00ADDC04 /* RestanrantViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestanrantViewCell.swift; sourceTree = "<group>"; };
 		8D5962F922545D150068C73E /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		8D5962FB22545EEC0068C73E /* MealViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewCell.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			children = (
 				8D311F8A2253A16A00ADDC04 /* RestanrantViewCell.swift */,
 				8D5962FB22545EEC0068C73E /* MealViewCell.swift */,
+				8D21AEA92255F83000852BE9 /* TrayViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D311F8B2253A16A00ADDC04 /* RestanrantViewCell.swift in Sources */,
+				8D21AEAA2255F83000852BE9 /* TrayViewCell.swift in Sources */,
 				8D9F66122254821600B44CC4 /* Helpers.swift in Sources */,
 				8D151614225338E0006525A5 /* Restaunrant.swift in Sources */,
 				8D7A53C8222D743E004B6618 /* User.swift in Sources */,
