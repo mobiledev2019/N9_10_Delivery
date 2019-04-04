@@ -14,6 +14,7 @@
 		8D1550482226724600C0F159 /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1550472226724600C0F159 /* FBManager.swift */; };
 		8D15504A2226795B00C0F159 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1550492226795B00C0F159 /* LoginViewController.swift */; };
 		8D21AEAA2255F83000852BE9 /* TrayViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D21AEA92255F83000852BE9 /* TrayViewCell.swift */; };
+		8D21AEAC2255FE4500852BE9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D21AEAB2255FE4500852BE9 /* CoreLocation.framework */; };
 		8D311F8B2253A16A00ADDC04 /* RestanrantViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D311F8A2253A16A00ADDC04 /* RestanrantViewCell.swift */; };
 		8D5962FA22545D150068C73E /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5962F922545D150068C73E /* Meal.swift */; };
 		8D5962FC22545EEC0068C73E /* MealViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5962FB22545EEC0068C73E /* MealViewCell.swift */; };
@@ -45,6 +46,7 @@
 		8D1550472226724600C0F159 /* FBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBManager.swift; sourceTree = "<group>"; };
 		8D1550492226795B00C0F159 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8D21AEA92255F83000852BE9 /* TrayViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrayViewCell.swift; sourceTree = "<group>"; };
+		8D21AEAB2255FE4500852BE9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8D311F8A2253A16A00ADDC04 /* RestanrantViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestanrantViewCell.swift; sourceTree = "<group>"; };
 		8D5962F922545D150068C73E /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		8D5962FB22545EEC0068C73E /* MealViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewCell.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D21AEAC2255FE4500852BE9 /* CoreLocation.framework in Frameworks */,
 				8DE1565122264F4E00973816 /* MapKit.framework in Frameworks */,
 				522D9A6B0D2048E7488EFCC8 /* Pods_DeliveryMobile.framework in Frameworks */,
 			);
@@ -180,6 +183,7 @@
 		8DE1564F22264F4E00973816 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8D21AEAB2255FE4500852BE9 /* CoreLocation.framework */,
 				8DE1565022264F4E00973816 /* MapKit.framework */,
 				8D90136F28F9F32BC5B17C30 /* Pods_DeliveryMobile.framework */,
 			);

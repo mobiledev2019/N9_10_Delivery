@@ -8,6 +8,8 @@
 
 import UIKit
 import MapKit
+import CoreLocation
+
 class TrayViewController: UIViewController {
 
     @IBOutlet weak var menuBarButton: UIBarButtonItem!
@@ -20,9 +22,27 @@ class TrayViewController: UIViewController {
     @IBOutlet weak var map: MKMapView!
     @IBOutlet weak var bAddPayment: UIButton!
     
+    var locationManager : CLLocationManager!
+    
     @IBAction func addPayment(_ sender: Any) {
         
+        if tbAddress.text == "" {
+            
+            let alertController = UIAlertController(title: "No Address", message: "Address is required", preferredStyle: .alert)
+            
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: { (alert) in
+                self.tbAddress.becomeFirstResponder()
+            })
+            
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+            
+        } else {
+            Tray.currentTray.address = tbAddress.text
+            self.performSegue(withIdentifier: "AddPayment", sender: self)
+        }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -52,12 +72,42 @@ class TrayViewController: UIViewController {
             
             loadMeals()
         }
+        
+        // Show current user location
+        if CLLocationManager.locationServicesEnabled() {
+            
+            locationManager = CLLocationManager()
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.requestAlwaysAuthorization()
+            locationManager.startUpdatingLocation()
+            
+            self.map.showsUserLocation = true
+            
+        }
+        
     }
+
     
     func loadMeals() {
         
         self.tbvMeals.reloadData()
         self.lbTotal.text = "$\(Tray.currentTray.getTotal())"
+    }
+}
+
+extension TrayViewController: CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        let location = locations.last! as CLLocation
+        
+        let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude,
+                                            longitude: location.coordinate.longitude)
+        
+        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+        
+        self.map.setRegion(region, animated: true)
     }
 }
 
