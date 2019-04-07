@@ -143,7 +143,7 @@ extension TrayViewController: UITextFieldDelegate {
         geocoder.geocodeAddressString(address!) { (placemarks, error) in
             
             if (error != nil) {
-                print("Error: ", error)
+                print("Error: ", error!)
             }
             
             if let placemark = placemarks?.first {
