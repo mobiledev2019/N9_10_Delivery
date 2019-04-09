@@ -732,7 +732,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ZVU-ZP-zav" kind="show" identifier="ViewOrder" id="Ka4-jq-XJf"/>
+                                    <action selector="placeOrder:" destination="xMs-Fw-2Jm" eventType="touchUpInside" id="nOu-gI-Lfs"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -748,6 +748,7 @@
                     </view>
                     <connections>
                         <outlet property="cardTextField" destination="9Ed-9S-Iks" id="9Br-7w-2o0"/>
+                        <segue destination="ZVU-ZP-zav" kind="show" identifier="ViewOrder" id="Xg1-9J-WJk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jdx-Ab-Kkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1117,7 +1118,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="IFL-eE-bVC"/>
-        <segue reference="Ka4-jq-XJf"/>
+        <segue reference="Xg1-9J-WJk"/>
         <segue reference="XTg-Z8-Fp2"/>
     </inferredMetricsTieBreakers>
 </document>
