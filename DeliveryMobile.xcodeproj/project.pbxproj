@@ -36,6 +36,8 @@
 		8D9F66122254821600B44CC4 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9F66112254821600B44CC4 /* Helpers.swift */; };
 		8DC2EF312243CF5B004BA742 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC2EF302243CF5B004BA742 /* APIManager.swift */; };
 		8DC2EF332243D3A8004BA742 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC2EF322243D3A8004BA742 /* Constants.swift */; };
+		8DC9249222609927004547E9 /* DriverOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC9249122609927004547E9 /* DriverOrder.swift */; };
+		8DC9249422609A1F004547E9 /* DriverOrderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC9249322609A1F004547E9 /* DriverOrderViewCell.swift */; };
 		8DE1564C2226349800973816 /* MealDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE1564B2226349800973816 /* MealDetailsViewController.swift */; };
 		8DE1564E22264E5700973816 /* TrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE1564D22264E5700973816 /* TrayViewController.swift */; };
 		8DE1565122264F4E00973816 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE1565022264F4E00973816 /* MapKit.framework */; };
@@ -78,6 +80,8 @@
 		8D9F66112254821600B44CC4 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		8DC2EF302243CF5B004BA742 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		8DC2EF322243D3A8004BA742 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8DC9249122609927004547E9 /* DriverOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverOrder.swift; sourceTree = "<group>"; };
+		8DC9249322609A1F004547E9 /* DriverOrderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverOrderViewCell.swift; sourceTree = "<group>"; };
 		8DE1564B2226349800973816 /* MealDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MealDetailsViewController.swift; path = ../MealDetailsViewController.swift; sourceTree = "<group>"; };
 		8DE1564D22264E5700973816 /* TrayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrayViewController.swift; path = ../TrayViewController.swift; sourceTree = "<group>"; };
 		8DE1565022264F4E00973816 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -126,6 +130,7 @@
 		8D1AC4F32260877400314BE1 /* Driver */ = {
 			isa = PBXGroup;
 			children = (
+				8DC9249322609A1F004547E9 /* DriverOrderViewCell.swift */,
 			);
 			path = Driver;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 		8D1AC4F52260878F00314BE1 /* Driver */ = {
 			isa = PBXGroup;
 			children = (
+				8DC9249122609927004547E9 /* DriverOrder.swift */,
 			);
 			path = Driver;
 			sourceTree = "<group>";
@@ -416,6 +422,7 @@
 				8D151614225338E0006525A5 /* Restaunrant.swift in Sources */,
 				8D7A53C8222D743E004B6618 /* User.swift in Sources */,
 				8D5962FA22545D150068C73E /* Meal.swift in Sources */,
+				8DC9249422609A1F004547E9 /* DriverOrderViewCell.swift in Sources */,
 				8D5CBEDF2254A7A1000EEF14 /* Tray.swift in Sources */,
 				8D15504A2226795B00C0F159 /* LoginViewController.swift in Sources */,
 				8D1AC4F8226088BF00314BE1 /* DriverMenuViewController.swift in Sources */,
@@ -435,6 +442,7 @@
 				8D1AC4FA2260906D00314BE1 /* DeliveryViewController.swift in Sources */,
 				8D1550432226558400C0F159 /* PaymentViewController.swift in Sources */,
 				8D7F1BEC22257D6100E17A10 /* SWRevealViewController.m in Sources */,
+				8DC9249222609927004547E9 /* DriverOrder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -149,7 +149,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DriverOrdersCell" id="HsU-Bu-jdT">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DriverOrdersCell" id="HsU-Bu-jdT" customClass="DriverOrderViewCell" customModule="DeliveryMobile" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="122"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HsU-Bu-jdT" id="U5L-xH-lBj">
@@ -157,7 +157,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N4v-Qm-EbX">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="122"/>
+                                            <rect key="frame" x="0.0" y="8" width="375" height="114"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4y-gw-FuE">
                                                     <rect key="frame" x="8" y="8" width="359" height="21"/>
@@ -166,10 +166,10 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pk9-uk-a1h">
-                                                    <rect key="frame" x="8" y="37" width="359" height="77"/>
+                                                    <rect key="frame" x="8" y="37" width="359" height="69"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7vu-Th-NLn">
-                                                            <rect key="frame" x="10" y="13.5" width="50" height="50"/>
+                                                            <rect key="frame" x="10" y="9.5" width="50" height="50"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="50" id="gul-FS-Ztp"/>
                                                                 <constraint firstAttribute="width" constant="50" id="q4a-wD-tLA"/>
@@ -214,12 +214,18 @@
                                         </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="N4v-Qm-EbX" firstAttribute="top" secondItem="U5L-xH-lBj" secondAttribute="top" id="0qA-zS-mOG"/>
+                                        <constraint firstItem="N4v-Qm-EbX" firstAttribute="top" secondItem="U5L-xH-lBj" secondAttribute="top" constant="8" id="0qA-zS-mOG"/>
                                         <constraint firstAttribute="bottom" secondItem="N4v-Qm-EbX" secondAttribute="bottom" id="R1d-7Y-lbC"/>
                                         <constraint firstAttribute="trailing" secondItem="N4v-Qm-EbX" secondAttribute="trailing" id="c52-KX-kFC"/>
                                         <constraint firstItem="N4v-Qm-EbX" firstAttribute="leading" secondItem="U5L-xH-lBj" secondAttribute="leading" id="vyc-Ng-TOY"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imgCustomerAvatar" destination="7vu-Th-NLn" id="Upj-cc-gdL"/>
+                                    <outlet property="lbCustomerAddress" destination="1YB-8t-13D" id="vXt-uD-PIS"/>
+                                    <outlet property="lbCustomerName" destination="UTt-Lz-WrK" id="le9-KY-Xhz"/>
+                                    <outlet property="lbRestaurantName" destination="L4y-gw-FuE" id="L6H-zZ-Vdc"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -232,6 +238,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="menuBarButton" destination="2Em-PA-HOm" id="C2Q-Bp-qJm"/>
+                        <segue destination="vXQ-Xg-d40" kind="show" identifier="CurrentDelivery" id="Usm-X1-c2A"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eaA-7R-EbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1620,6 +1627,7 @@
         <segue reference="BC8-vl-3xU"/>
         <segue reference="Xg1-9J-WJk"/>
         <segue reference="XTg-Z8-Fp2"/>
+        <segue reference="Usm-X1-c2A"/>
         <segue reference="N4i-Li-2Xu"/>
     </inferredMetricsTieBreakers>
 </document>

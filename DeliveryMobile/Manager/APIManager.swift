@@ -43,7 +43,6 @@ class APIManager {
                 
                 let jsonData = JSON(value)
                 print(jsonData)
-                print(FBSDKAccessToken.current().tokenString!)
                 
                 self.accessToken = jsonData["access_token"].string!
                 self.refreshToken = jsonData["refresh_token"].string!
@@ -140,6 +139,9 @@ class APIManager {
         
     }
     
+    //**** CUSTOMER********* ///
+    
+    
     //API for getting Restaurant list
     func getRestaurants(completionHandler: @escaping (JSON?) -> Void) {
         
@@ -194,5 +196,25 @@ class APIManager {
         let params: [String: Any] = ["access_token": self.accessToken]
         
         requestServer(.get, path, params, URLEncoding(), comletionHandler)
+    }
+    
+    //**** DRIVERS********* ///
+    
+    // API for getting list of order ready
+    func getDriverOrders(completionHandler: @escaping (JSON) -> Void) {
+        
+        let path = "api/driver/orders/ready/"
+        requestServer(.get, path, nil, URLEncoding(), completionHandler)
+    }
+    
+    // API Pick ready order
+    func pickOrder(orderId: Int, completionHandler: @escaping (JSON) -> Void) {
+        
+        let path = "api/driver/orders/pick/"
+        let params: [String: Any] = [
+            "order_id": "\(orderId)",
+            "access_token": self.accessToken
+        ]
+        requestServer(.post, path, params, URLEncoding(), completionHandler)
     }
 }
