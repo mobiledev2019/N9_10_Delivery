@@ -780,7 +780,7 @@
                                     <constraint firstAttribute="height" constant="100" id="k4J-DI-Hax"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="OrderItemCell" id="Vvk-IE-G1v">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="OrderItemCell" id="Vvk-IE-G1v" customClass="OrderViewCell" customModule="DeliveryMobile" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vvk-IE-G1v" id="gyk-6l-mWX">
@@ -822,6 +822,11 @@
                                                 <constraint firstItem="XhG-Nz-4ER" firstAttribute="leading" secondItem="gyk-6l-mWX" secondAttribute="leadingMargin" constant="20" id="vnb-l1-a6l"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lbMealName" destination="lav-Qk-TyD" id="2ra-KN-E0y"/>
+                                            <outlet property="lbQty" destination="XhG-Nz-4ER" id="5Uu-s5-Vzy"/>
+                                            <outlet property="lbSubTotal" destination="ldi-Wi-WQz" id="apg-Go-UEK"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -831,6 +836,9 @@
                             </tableView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="YQ7-E7-IMl">
                                 <rect key="frame" x="0.0" y="64" width="375" height="453"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ZVU-ZP-zav" id="1Ql-Np-ErE"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -852,7 +860,10 @@
                         <barButtonItem key="leftBarButtonItem" title="Item" image="icon_menu_24dp" id="d9M-Lu-p4X"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="lbStatus" destination="gqm-ah-eGZ" id="uGE-VJ-3Z3"/>
+                        <outlet property="map" destination="YQ7-E7-IMl" id="SPX-s1-zTO"/>
                         <outlet property="menuBarButton" destination="d9M-Lu-p4X" id="dl4-hf-uts"/>
+                        <outlet property="tbvMeal" destination="lOi-i5-Yjj" id="9hO-p1-C62"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="92b-YY-3x4" userLabel="First Responder" sceneMemberID="firstResponder"/>
