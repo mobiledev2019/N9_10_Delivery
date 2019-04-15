@@ -6,6 +6,9 @@ PODS:
   - Bolts/AppLinks (1.9.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.9.0)
+  - Charts (3.2.2):
+    - Charts/Core (= 3.2.2)
+  - Charts/Core (3.2.2)
   - FacebookCore (0.6.0):
     - Bolts (~> 1.9)
     - FBSDKCoreKit (~> 4.43)
@@ -31,6 +34,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-beta.3)
   - Bolts
+  - Charts (from `https://github.com/danielgindi/Charts.git`)
   - FacebookCore
   - FacebookLogin
   - FacebookShare
@@ -53,9 +57,19 @@ SPEC REPOS:
     - Stripe
     - SwiftyJSON
 
+EXTERNAL SOURCES:
+  Charts:
+    :git: https://github.com/danielgindi/Charts.git
+
+CHECKOUT OPTIONS:
+  Charts:
+    :commit: 13623d0239f170270952397614c1fc676d538cb8
+    :git: https://github.com/danielgindi/Charts.git
+
 SPEC CHECKSUMS:
   Alamofire: 6458d95477bc40adf10129f22c67cfb014162dc8
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  Charts: f69cf0518b6d1d62608ca504248f1bbe0b6ae77e
   FacebookCore: 38cd3a4078738d6f648eb9b6b9d35b02d693e9a1
   FacebookLogin: 658b0569961a081a0890f5f4dbf69ced00657d9e
   FacebookShare: 84bccbc222fc09c839b851925ad6c295a4ab7840
@@ -65,6 +79,6 @@ SPEC CHECKSUMS:
   Stripe: 312b22a67af9fa55c246d26148b3f3a9636a0ff2
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 937d21f93c94602c696383555827199971d9c13f
+PODFILE CHECKSUM: 138e5c0c8c477e632210255437733bedb11efe34
 
 COCOAPODS: 1.6.1

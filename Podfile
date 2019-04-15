@@ -20,4 +20,6 @@ target 'DeliveryMobile' do
   
   pod 'SwiftyJSON', '~> 4.0'
 
+  pod 'Charts', :git => 'https://github.com/danielgindi/Charts.git'
+
 end

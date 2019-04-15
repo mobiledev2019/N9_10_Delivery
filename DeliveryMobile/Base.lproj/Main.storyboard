@@ -254,7 +254,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3xE-lq-Bxv">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXQ-Xg-d40" id="DER-bb-u7a"/>
+                                </connections>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYq-Fb-QBQ">
                                 <rect key="frame" x="8" y="609" width="359" height="50"/>
@@ -266,6 +269,9 @@
                                 <state key="normal" title="COMPLETE ORDER">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="completeOrder:" destination="vXQ-Xg-d40" eventType="touchUpInside" id="ubz-gJ-RYa"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VgY-Lj-LAK">
                                 <rect key="frame" x="8" y="521" width="359" height="80"/>
@@ -323,7 +329,14 @@
                         <barButtonItem key="leftBarButtonItem" title="Item" image="icon_menu_24dp" id="dYR-M0-kdX"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="bComplete" destination="rYq-Fb-QBQ" id="x1D-h0-N2y"/>
+                        <outlet property="imgCustomerAvatar" destination="TwZ-vU-WZs" id="zH9-OJ-RTF"/>
+                        <outlet property="lbCustomerAddess" destination="NOr-jc-dKq" id="bAn-lv-DJm"/>
+                        <outlet property="lbCustomerName" destination="LHu-0K-Zve" id="CgQ-pv-aN5"/>
+                        <outlet property="map" destination="3xE-lq-Bxv" id="opK-K4-PXP"/>
                         <outlet property="menuBarButton" destination="dYR-M0-kdX" id="NXR-66-jLs"/>
+                        <outlet property="viewInfo" destination="VgY-Lj-LAK" id="UEX-VH-zVr"/>
+                        <segue destination="ZGg-pk-u7d" kind="show" identifier="ViewOrders" id="5x7-IB-33c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3jA-nV-ncn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -338,7 +351,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wpJ-2u-Hdk">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wpJ-2u-Hdk" customClass="BarChartView" customModule="Charts">
                                 <rect key="frame" x="10" y="94" width="355" height="483"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -357,6 +370,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="menuBarButton" destination="6of-aW-Fyu" id="xNS-yc-LRK"/>
+                        <outlet property="viewChart" destination="wpJ-2u-Hdk" id="KGM-de-B21"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QEP-nI-h3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1628,6 +1642,7 @@
         <segue reference="Xg1-9J-WJk"/>
         <segue reference="XTg-Z8-Fp2"/>
         <segue reference="Usm-X1-c2A"/>
+        <segue reference="5x7-IB-33c"/>
         <segue reference="N4i-Li-2Xu"/>
     </inferredMetricsTieBreakers>
 </document>

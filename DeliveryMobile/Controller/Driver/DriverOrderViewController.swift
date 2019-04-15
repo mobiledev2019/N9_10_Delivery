@@ -88,7 +88,7 @@ class DriverOrderViewController: UITableViewController {
         
         APIManager.shared.pickOrder(orderId: orderId) { (json) in
             
-            print(orderId)
+            print(json)
             
             if let status = json["status"].string {
                 
