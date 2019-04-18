@@ -24,10 +24,9 @@ class LoginViewController: UIViewController {
         
         if (FBSDKAccessToken.current() != nil){
             
-            bLogout.isHidden = false
             FBManager.getFBUserData {
-                
                 self.bLogin.setTitle("Continue as \(User.currentUser.email!)", for: .normal)
+                self.bLogout.isHidden = false
             }
         }
     }
@@ -40,7 +39,7 @@ class LoginViewController: UIViewController {
             performSegue(withIdentifier: "\(userType)View", sender: self)
         }
         else{
-            self.bLogout.isHidden = true
+            bLogout.isHidden = true
         }
     }
     @IBAction func facebookLogout(_ sender: Any) {

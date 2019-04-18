@@ -74,7 +74,9 @@ class StatisticViewController: UIViewController {
                     dataEntries.append(dataEntry)
                     
                 }
+//                let chartDataSet = BarChartDataSet(entries: dataEntries, label: "Revenue by day")
                 let chartDataSet = BarChartDataSet(entries: dataEntries, label: "Revenue by day")
+                
                 chartDataSet.colors = ChartColorTemplates.material()
                 let chartData = BarChartData(dataSet: chartDataSet)
                 
