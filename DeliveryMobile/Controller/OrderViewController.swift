@@ -63,6 +63,7 @@ class OrderViewController: UIViewController {
                     self.getLocation(to, "CUS", { (des) in
                         self.destination = des
                         self.getDirections()
+                        self.autoZoom()
                     })
                 })
                 
@@ -104,7 +105,7 @@ class OrderViewController: UIViewController {
                     self.driverPin?.title = "DRI"
                     self.map.addAnnotation(self.driverPin!)
                 }
-                self.autoZoom()
+//                self.autoZoom()
             } else {
                 self.timer.invalidate()
             }

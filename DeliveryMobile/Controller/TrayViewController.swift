@@ -46,6 +46,8 @@ class TrayViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.hideKeyboardWhenTappedAround()
+        
         if self.revealViewController() != nil {
             menuBarButton.target = self.revealViewController()
             menuBarButton.action = #selector(SWRevealViewController.revealToggle(_:))
@@ -83,9 +85,7 @@ class TrayViewController: UIViewController {
             locationManager.startUpdatingLocation()
             
             self.map.showsUserLocation = true
-            
         }
-        
     }
 
     func loadMeals() {
@@ -165,5 +165,17 @@ extension TrayViewController: UITextFieldDelegate {
             }
         }
         return true
+    }
+}
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

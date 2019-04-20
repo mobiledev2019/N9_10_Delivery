@@ -13,10 +13,14 @@ class PaymentViewController: UIViewController {
 
     
     @IBOutlet weak var cardTextField: STPPaymentCardTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.hideKeyboardWhenTappedAround()
+
     }
+    
     @IBAction func placeOrder(_ sender: Any) {
         
         APIManager.shared.getLatestOrder { (json) in
@@ -37,6 +41,7 @@ class PaymentViewController: UIViewController {
                             
                             Tray.currentTray.reset()
                             self.performSegue(withIdentifier: "ViewOrder", sender: self)
+                            self.dismissKeyboard()
                         }
                     }
                 })
@@ -60,5 +65,4 @@ class PaymentViewController: UIViewController {
             }
         }
     }
-    
 }
