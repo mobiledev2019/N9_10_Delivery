@@ -254,7 +254,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3xE-lq-Bxv">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <connections>
                                     <outlet property="delegate" destination="vXQ-Xg-d40" id="DER-bb-u7a"/>
                                 </connections>
@@ -1642,7 +1642,7 @@
         <segue reference="Xg1-9J-WJk"/>
         <segue reference="XTg-Z8-Fp2"/>
         <segue reference="Usm-X1-c2A"/>
-        <segue reference="WDH-ue-1gP"/>
+        <segue reference="5x7-IB-33c"/>
         <segue reference="nQD-5f-eCf"/>
     </inferredMetricsTieBreakers>
 </document>

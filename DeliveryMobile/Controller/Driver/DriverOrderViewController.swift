@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class DriverOrderViewController: UITableViewController {
 
@@ -29,6 +30,20 @@ class DriverOrderViewController: UITableViewController {
         loadReadyOrder()
     }
     
+    func pushNotification() {
+        
+        let content = UNMutableNotificationContent()
+        content.title = "New Order"
+        content.body = "You have new order!"
+        content.sound = UNNotificationSound.default
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
+        
+        let request = UNNotificationRequest(identifier: "testIdentifier", content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+    }
+    
     func loadReadyOrder() {
         
         Helpers.showActivityIndicator(activityIndicator, self.view)
@@ -40,7 +55,9 @@ class DriverOrderViewController: UITableViewController {
             if json != nil {
                 
                 self.orders = []
+                
                 if let readyOrder = json["orders"].array {
+                    self.pushNotification()
                     for item in readyOrder {
                         let order = DriverOrder(json: item)
                         self.orders.append(order)
